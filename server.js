@@ -35,6 +35,6 @@ app.post('/login',(req,res)=>{
     }
 })
 
-app.listen(8080,()=>{
+app.listen(8080||process.env.PORT,()=>{
     console.log("server started at port 8080");
 })
