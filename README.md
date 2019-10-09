@@ -1,2 +1,1 @@
-# Frontend Work -> frontend branch
-# Backend Work -> backend branch
+# Backend Work -> this is backend branch
