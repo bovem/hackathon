@@ -7,7 +7,7 @@ const bodyParser = require('body-parser')
 
 app.use(bodyParser.urlencoded({extended: false}))
 
-app.get('/',(req,res)=>{
+app.get('/vishnu',(req,res)=>{
     res.send('Server started');
 })
 
