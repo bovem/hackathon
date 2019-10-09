@@ -27,7 +27,7 @@ app.post('/login',(req,res)=>{
             var aId = user.aadharId;
             let filePath = './data/'+req.body.key;
             
-            const pythonProcess = spawn('python',[ScriptPath, aid]);
+            const pythonProcess = spawn('python',['decrypt_n_save.py', aid]);
             pythonProcess.stdout.on('data', function(data) {
                 res.send('101010');
             } )
