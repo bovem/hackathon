@@ -20,11 +20,6 @@ kdf = PBKDF2HMAC(
 key = base64.urlsafe_b64encode(kdf.derive(password)) # Can only use kdf once
 
 
-
-
-
-
-flag = 0
 f_name = password_provided
 source = './data/' + f_name
 if not os.path.exists(source):
@@ -55,10 +50,10 @@ for f in os.listdir(source):
     with open(output_file, 'wb') as f:
         f.write(encrypted)
     
-    print("File successfuly decrypted!!!!")
+    print("File successfuly decrypted!!")
+    sys.stdout.flush()
+
     
-    flag = 1
-if flag==0:
-        print("File not present")
+
         
               
