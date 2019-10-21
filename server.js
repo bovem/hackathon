@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({extended: true}))
 
 app.use(bodyParser.json({limit:'11mb'}))
 
-app.get('/',(req,res)=>{
+app.get('/vishnu',(req,res)=>{
     res.send('Server started');
 })
 
@@ -38,6 +38,7 @@ app.post('/login',(req,res)=>{
         })
     
 })
+
 
 const host = '0.0.0.0'
 
