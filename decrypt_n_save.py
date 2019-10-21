@@ -43,7 +43,6 @@ for f in os.listdir(source):
     output_file = './data/temp/'+f
     with open(input_file, 'rb') as f:
         data = f.read()
-
     fernet = Fernet(key)
     encrypted = fernet.decrypt(data)
 

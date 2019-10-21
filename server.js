@@ -33,7 +33,7 @@ app.post('/login',(req,res)=>{
             
             const pythonProcess = spawn('python3',['decrypt_n_save.py', aId]);
             pythonProcess.stdout.on('data', function(data) {
-                res.send('data');
+                res.send(data);
             } )
         })
     
